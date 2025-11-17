@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Intuit.Api/Intuit.Api.csproj" />
+  <Project Path="Intuit.Application/Intuit.Application.csproj" />
+  <Project Path="Intuit.Domain/Intuit.Domain.csproj" />
+  <Project Path="Intuit.Infrastructure/Intuit.Infrastructure.csproj" />
+</Solution>
