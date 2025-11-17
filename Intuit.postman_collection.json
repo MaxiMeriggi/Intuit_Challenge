@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "3a0a56d2-a9a1-4c21-b414-55f5636a2936",
+		"name": "Intuit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30721829"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7204/api/Cliente/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7204",
+					"path": [
+						"api",
+						"Cliente",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7204/api/Cliente/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7204",
+					"path": [
+						"api",
+						"Cliente",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7204/api/Cliente/search/ucí",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7204",
+					"path": [
+						"api",
+						"Cliente",
+						"search",
+						"ucí"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Juan\",\r\n  \"apellido\": \"Pérez Modificado\",\r\n  \"razonSocial\": \"Empresa Nueva\",\r\n  \"cuit\": \"20-15545672-9\",\r\n  \"fechaNacimiento\": \"1990-03-20\",\r\n  \"telefonoCelular\": \"1199988877\",\r\n  \"email\": \"juan.perez@example.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7204/api/Cliente/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7204",
+					"path": [
+						"api",
+						"Cliente",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Juanito\",\r\n    \"apellido\": \"Pérez Modificado\",\r\n    \"razonSocial\": \"Empresa Nueva Modificada\",\r\n    \"cuit\": \"20-15545672-9\",\r\n    \"fechaNacimiento\": \"1990-03-20\",\r\n    \"telefonoCelular\": \"1199988877\",\r\n    \"email\": \"juan.peresfsz@example.com\",\r\n    \"fechaCreacion\": \"2025-11-17T08:07:32.7106129-03:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7204/api/Cliente/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7204",
+					"path": [
+						"api",
+						"Cliente",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Juan\",\r\n  \"apellido\": \"Pérez Modificado\",\r\n  \"razonSocial\": \"Empresa Nueva\",\r\n  \"cuit\": \"20-15545678-9\",\r\n  \"fechaNacimiento\": \"1990-03-20\",\r\n  \"telefonoCelular\": \"1199988877\",\r\n  \"email\": \"juan.peresz@example.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7204/api/Cliente/19",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7204",
+					"path": [
+						"api",
+						"Cliente",
+						"19"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
